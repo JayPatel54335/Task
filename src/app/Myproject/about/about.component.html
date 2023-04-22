@@ -1,0 +1,52 @@
+<style>
+
+    .animate-charcter
+    {
+        text-transform: uppercase;
+        background-image: linear-gradient(
+    -225deg,
+    /* #231557 0%, */
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #1b1a1a;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  /* text-fill-color: transparent; */
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 100px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+</style>
+<div class="col-md-12 text-center">
+    <h2 class="animate-charcter"> Jay Patel</h2>
+<p> <b> This is about me page!
+    <br>
+    I created this Angular web page with help of html, css, js, & bootstrap5.
+<br> To know more click below.
+</b> </p>
+<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Click me!</button>
+
+<div class="offcanvas offcanvas-bottom"  tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasBottomLabel">About me</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body small">
+    <h3> hello sir my name is Jay patel </h3>
+    <p> <b> I am student of Sem6-IT From Seti collage 
+        <br> here is End of my project 
+    </b></p>
+  </div>
+</div>
